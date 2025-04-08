@@ -1,0 +1,86 @@
+#login-form h1 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#login-form label {
+  font-family: Montserrat;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: Montserrat;
+  margin-bottom: 20px;
+}
+
+#login-form .button {
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: black;
+  color: #fff;
+  padding: 12px 16px;
+  transition: 150ms;
+  font-size: 1.1em;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#login-form .button:hover {
+  background-color: #f3f3f3;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (width < 600px) {
+  #login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-box.login {
+    display: grid;
+    padding: 40px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .inputs-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  #login-form label,
+  #login-form input[type="text"],
+  #login-form input[type="password"],
+  #login-form .button {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+  }
+  .links-cad {
+    flex-direction: column;
+    width: 80%;
+    margin: 4px auto;
+    padding: 0;
+  }
+  .links-cad .link {
+    padding: 2px 0;
+  }
+}
+@media (width < 400px) {
+  .container-box.login {
+    padding: 80px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

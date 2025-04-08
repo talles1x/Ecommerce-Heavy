@@ -1,0 +1,91 @@
+.marcas {
+  margin: 120px auto;
+}
+
+.marcasArea::-webkit-scrollbar {
+  height: 6px;
+}
+
+.marcasArea::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 40px;
+}
+
+.marcasArea::-webkit-scrollbar-thumb {
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.marcasArea {
+  max-width: 1200px;
+  padding: 0 40px 20px 40px;
+  margin: 0px auto;
+  overflow: auto;
+}
+
+.title-1 {
+  font-family: 'Poppins';
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.marcasLista {
+  display: flex;
+  padding: 15px 20px;
+  gap: 20px;
+  position: relative;
+  transition: 0.2s;
+}
+.marcasLista:hover a img {
+  transition: 0.4s ease;
+  filter: blur(15px);
+}
+
+.marcasLista a {
+  position: relative;
+  padding: 90px;
+  transition: 0.2s;
+}
+
+.marcasLista a:hover img {
+  filter: blur(0px);
+  scale: 1.4;
+}
+
+.marcasLista a img {
+  transition: 0.4s;
+  width: 100px;
+  position: absolute;
+  top: 41px;
+  bottom: 41px;
+  left: 41px;
+  right: 41px;
+}
+
+@media (width < 1000px) {
+  .marcasLista a {
+    padding: 60px;
+    z-index: 1;
+  }
+  .marcasLista a img {
+    z-index: 0;
+    width: 70px;
+    top: 26px;
+    bottom: 26px;
+    left: 26px;
+    right: 26px;
+  }
+  .marcasLista a:hover img {
+    scale: 1;
+  }
+}
+@media (width < 600px) {
+  .title-1 {
+    font-size: 16px;
+    text-align: center;
+  }
+}

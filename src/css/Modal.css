@@ -1,0 +1,107 @@
+/* Fazer o css do modal */
+.buttonMenu {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.modal .menu a {
+  text-align: center;
+  color: black;
+  padding: 20px;
+  font-family: "Montserrat";
+}
+
+.modal .menu a::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #333;
+  transition: 0.3s;
+}
+.modal .menu a:hover::after {
+  width: 100%;
+}
+
+@media (width <= 600px) {
+  .buttonMenu {
+    order: 1;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  .buttonMenu.ativo {
+    border: 1px solid rgb(29, 29, 29);
+    rotate: 90deg;
+  }
+  .modal {
+    position: relative;
+    z-index: 0;
+    right: -30px;
+    padding: 4rem 0 2rem 0;
+    top: 60px;
+    background-color: #ffffffb0;
+    animation: show 0.2s;
+    border-radius: 0px 0px 0px 4px;
+    box-shadow: -2px -2px rgb(0, 0, 0), inset -2px -2px rgb(0, 0, 0);
+  }
+  .menu {
+    position: relative;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .modal .menu a {
+    animation: show 0.3s;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 4px 8px;
+    display: flex;
+  }
+  .modal .menu a::after {
+    animation: show 0.3s;
+    content: "";
+    background: rgb(29, 29, 29);
+    height: 1px;
+    width: 80%;
+    margin: 4px auto 0 auto;
+    display: block;
+  }
+  .modal .menu a:hover::after {
+    color: rgba(80, 80, 80, 0.1);
+  }
+}
+
+@media (width <= 380px) {
+  .modal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: show 0.4s;
+  }
+  .modal .menu a {
+    padding: 8px 12px;
+    font-size: 0.825rem;
+    display: flex;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
