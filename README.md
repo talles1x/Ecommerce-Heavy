@@ -20,3 +20,18 @@ Projeto simples de e-commerce de roupas desenvolvido com **React** e **CSS puro*
 - Página de login (estática)
 - Carrinho de compras (simulado)
 - Layout responsivo
+
+## ▶️ Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/talles1x/ecommerce-roupas.git
+
+# Acesse a pasta do projeto
+cd ecommerce-roupas
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
