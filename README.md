@@ -12,7 +12,6 @@ Projeto simples de e-commerce de roupas desenvolvido com **React** e **CSS puro*
 
 - React
 - CSS
-- React Router DOM
 
 ## 📦 Funcionalidades
 
